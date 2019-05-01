@@ -49,7 +49,8 @@
 
 * Sample Demo Screenshots: 
 
-   * Setting up the environment
+   * Setting up the environment <br />
+   
          1. cd ~/Desktop
          2. mkdir 266Project
          3. virtualenv -p /usr/bin/python3
@@ -59,9 +60,11 @@
          7. pip install azure-cli
 
    * Login to the Azure account: <br />
+   
 		   1. az login
 
    * Create a resource group ‘266Project’ in South Central US: <br />
+   
  		   1. az group create --name 266project --location southcentralus
 
    * Create a standard storage account within this resource group ‘266Projectstorage’ in South Central US: <br />
