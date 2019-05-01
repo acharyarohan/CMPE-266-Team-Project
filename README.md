@@ -47,6 +47,116 @@
 6. Microsoft Power BI: This service can be used to create customized dashboards for data visualization. 
 7. Microsoft Azure SQL Database: This service can be used to store relational data. 
 
+* Sample Demo Screenshots: 
+
+   * Setting up the environment
+         1. cd ~/Desktop
+         2. mkdir 266Project
+         3. virtualenv -p /usr/bin/python3
+         4. virtualenv -p /usr/bin/python3 .
+         5. source ./bin/activate
+         6. sudo apt install python3-dev
+         7. pip install azure-cli
+
+   * Login to the Azure account: <br />
+		   1. az login
+
+   * Create a resource group ‘266Project’ in South Central US: <br />
+ 		   1. az group create --name 266project --location southcentralus
+
+   * Create a standard storage account within this resource group ‘266Projectstorage’ in South Central US: <br />
+ 		   1. az storage account create --name 266projectstorage --resource-group 266project --location        
+		   2. southcentralus --kind Storage --sku Standard_LRS
+
+
+   * Create a container ‘photos’ within this storage account to transfer pics coming in from the cameras: <br />
+		   1. az storage container create --name photos266 --account-name cmpe266storage
+
+   * Create an IOT hub ‘266hub’ which will connect to the cameras placed in the Arctic in the free tier F1: <br />
+		   1. az iot hub create --name 266hub --resource-group 266project --location southcentralus --sku F1
+
+
+     7.    Get the connection string for the IOT hub using the following command:
+ 		az iot hub show-connection-string --name 266hub
+
+     8.    Initialise a NodeJS app within the project directory:
+		npm init -y
+     9.    Install Azure IOT hub modules to transfer data and images from the cameras to the hub:
+		npm install azure-iothub --save
+ 		npm install azure-iot-device azure-iot-device-mqtt --save
+
+     8.  Create a file devices.json in the directory and add the content as shown in the Github repository. This file     
+           defines the cameras deployed and their longitude and lattitude location. There is a missing key parameter 
+           to connect to the IOT hub.
+     9.    Create a file deploy.js within the directory and add the content as shown in the Github repository. This file       
+	creates a new file cameras.json which also has a key for each camera to connect to the IOT hub using the 
+	connection string generated earlier. Run this file:
+		node deploy.js
+
+     10.   Upload a test image from the photos folder to the IOT hub by running test.js:
+ 		node test.js
+
+   
+
+
+
+
+
+  11.    Verify that the blob was received through Azure UI within the photos container created earlier:
+
+
+   12.    Create a new resource in Azure UI for a New Stream Analytics Job which will receive live data from the 10 
+	Cameras:
+
+     
+
+
+
+
+
+13.    Check if the deployment of the job succeeded:
+
+14.    To set the IoT hub as its input where the cameras send data, go to its input tab and add the IoT hub created earlier:
+
+
+15.    Create a file run.js which will transmit events and images to the IoT hub and this is forwarded to the Stream 
+          Analytics Job:
+		node run.js
+
+
+16.    Go to the query editor within the Stream Analytics Job and enter the query to see if data is being received from the IoT hub:
+
+
+17.    To check if an image is transferred from a given camera within 10 seconds which is indicative of a polar bear or any other animal citing, give the following command. It will reveal the details of the device and the time when the camera clicked more than once within 10 seconds. Save this query:
+
+
+
+
+
+
+18.    Create a Function App resource which will be triggered every time the above query is executed and there is 
+          a potential polar bear citing. This function app will then trigger the Custom Vision Prediction service to 
+          Ascertain whether the animal spotted is indeed a Polar bear as it could be an arctic fox or a walrus as well:
+
+
+
+
+19.    Within the Function App, create a Webhook + API which will run whenever it receives an HTTP request from  
+          from the Stream Analytics Job:
+
+
+
+20.    Add Function App as the output to the Stream Analytics job: 
+
+21.    Change the saved query to save the data into the FunctionOutput:
+
+13.    Check if the deployment of the job succeeded:
+
+13.    Check if the deployment of the job succeeded:
+
+13.    Check if the deployment of the job succeeded:
+
+
 * Public URL to the application: <br />
 
     * Refer following Github repository to access project code and set up steps: 
