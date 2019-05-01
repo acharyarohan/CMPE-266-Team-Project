@@ -10,8 +10,8 @@
 
 * Professor: Sanjay Garje
 
-* Students : 
-   [Roopam Rajvanshi](https://www.linkedin.com/in/roopamrajvanshi/) 
+* Students : <br />
+   [Roopam Rajvanshi](https://www.linkedin.com/in/roopamrajvanshi/) <br />
    [Rohan Acharya](https://www.linkedin.com/in/acharyarohan/)  
 
 
