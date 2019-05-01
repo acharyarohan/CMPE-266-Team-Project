@@ -1,0 +1,62 @@
+[
+    {
+        "deviceId": "polar_cam_0001",
+        "latitude": 75.401451,
+        "longitude": -95.722518,
+        "key": "oy+X4i3L1M1LjHGVmARu9glhp5cci8QrzomlVp20+bI="
+    },
+    {
+        "deviceId": "polar_cam_0002",
+        "latitude": 75.027715,
+        "longitude": -96.041859,
+        "key": "zw7OhTIn6jE0LXwWrcvUQL1BD9Bl0cvN0mPEFgNts/o="
+    },
+    {
+        "deviceId": "polar_cam_0003",
+        "latitude": 74.996653,
+        "longitude": -96.60178,
+        "key": "Ehrasjk4Mc8z9y0vl1BK3nwcRbaDXN0PX2VPbTo1Z9Q="
+    },
+    {
+        "deviceId": "polar_cam_0004",
+        "latitude": 75.247701,
+        "longitude": -96.074436,
+        "key": "CVP3+equt+o8B51tBbn1dBoqPfyfq5JXDrUbSA/tpz4="
+    },
+    {
+        "deviceId": "polar_cam_0005",
+        "latitude": 75.044926,
+        "longitude": -93.651951,
+        "key": "Gba1PNRs2U1ezwsDo6GvlZM7BBtRYGGpGs7MIESMJv4="
+    },
+    {
+        "deviceId": "polar_cam_0006",
+        "latitude": 75.601571,
+        "longitude": -95.294407,
+        "key": "L8rvK0AVK/x55ZNd4eFpeB4m4pljyxbqsAb4hxm+0dQ="
+    },
+    {
+        "deviceId": "polar_cam_0007",
+        "latitude": 74.763102,
+        "longitude": -95.09116,
+        "key": "o3f2XXgZR6pmNeTgazwf/CwvLE0N9dMDx1nQy2BR/pw="
+    },
+    {
+        "deviceId": "polar_cam_0008",
+        "latitude": 75.473988,
+        "longitude": -94.069432,
+        "key": "EBFq6oMO+U1dfrgK9gPFxIPLlksmUsyYrM/g14twOao="
+    },
+    {
+        "deviceId": "polar_cam_0009",
+        "latitude": 75.232307,
+        "longitude": -96.277683,
+        "key": "sf7KYSnYHdbJ0q22PrnTePI2v03Hf2QQgFluKBwkWdM="
+    },
+    {
+        "deviceId": "polar_cam_0010",
+        "latitude": 74.658811,
+        "longitude": -93.783787,
+        "key": "wX2czH93CTFZD4DDz4WT0pREPf/ITMSwgN5tV5+aocI="
+    }
+]
