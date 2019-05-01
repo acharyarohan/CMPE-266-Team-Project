@@ -12,7 +12,7 @@
 
 * Students : 
    [Roopam Rajvanshi](https://www.linkedin.com/in/roopamrajvanshi/) 
-   [Rohan Acharya] (https://www.linkedin.com/in/acharyarohan/)  
+   [Rohan Acharya](https://www.linkedin.com/in/acharyarohan/)  
 
 
 ## Architecture Diagram - 
