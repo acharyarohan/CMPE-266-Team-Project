@@ -1,6 +1,6 @@
 var fs = require('fs');
 var iothub = require('azure-iothub');
-var registry = iothub.Registry.fromConnectionString('HostName=266hub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=xWRGGNRePPZqk5rneDHgyECCayBLH6psbLCL9wkeZZ8=');
+var registry = iothub.Registry.fromConnectionString('CONNECTION_STRING');
 
 console.log('Reading devices.json...');
 var devices = JSON.parse(fs.readFileSync('devices.json', 'utf8'));
