@@ -1,7 +1,7 @@
 # CMPE-266-Team-Project
 CMPE 266 Big Data Project - Spring 2019
 
-![img] (https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/sjsu_logo.png)
+![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/sjsu_logo.png)
 
 Architecture Diagram
 
