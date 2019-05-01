@@ -37,3 +37,31 @@
 6. Microsoft Power BI
 7. Microsoft Azure SQL Database 
 
+* Solution for each requirement present in the problem statement? <br />
+
+1. Microsoft Azure IoT Hub: This can be used to ingest any kind of streaming data via a simulated recording media for example - cameras. 
+2. Microsoft Azure Storage: Any kind of streaming data can be stored here. 
+3. Microsoft Azure Stream Analytics: This service can be used to process real-time data streams. 
+4. Microsoft Azure Function: This service can be used to process outputs from the Stream Analytics service. 
+5. Microsoft Custom Vision Service: This service can be used to analyze/recognize images. 
+6. Microsoft Power BI: This service can be used to create customized dashboards for data visualization. 
+7. Microsoft Azure SQL Database: This service can be used to store relational data. 
+
+* Public URL to the application: <br />
+
+    * Refer following Github repository to access project code and set up steps: 
+
+      https://github.com/acharyarohan/CMPE-266-Team-Project 
+
+* Test Account Credentials:  <br />
+
+    * Microsoft Azure Portal Credentials are as follows-
+
+      > Username : rrajvanshi1947@gmail.com <br />
+        Password : 
+
+* URL to Github repo : <br />
+
+     https://github.com/acharyarohan/CMPE-266-Team-Project 
+
+
