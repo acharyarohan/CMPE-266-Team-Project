@@ -1,6 +1,6 @@
-var iotHubName = '266hub';
-var storageAccountName = '266projectstorage';
-var storageAccountKey = 'iwffUZZN0m2d6wCcBQXuC+tS33P4mKj6oJAS1udgvNlQygULdGGEaLeuLso0YSAIip5wSWfEfC0bkI9H68hgGw==';
+var iotHubName = 'IOT_HUB_NAME';
+var storageAccountName = 'RESOURCE_STORAGE_NAME';
+var storageAccountKey = 'ACCOUNT_KEY';
 
 // Upload an image to blob storage
 var azure = require('azure-storage');
