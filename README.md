@@ -62,7 +62,7 @@
    
 		   az login
 		  
-   [https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-25-     47.png]
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-25-47.png)
 
    * Create a resource group ‘266Project’ in South Central US: <br />
    
