@@ -21,10 +21,10 @@
 
 * What is the project idea /What the Big Data application does?
              
-**Problem Statement:** 
+     **Problem Statement:** 
 
 ```
-A senior climate scientist in the Arctic is worried about the extinction of polar bears in the region. He has placed hundreds of motion-activated cameras at marked location throughout the region. He now wants to devise an automated system that can process data from these cameras in real time and can display some sort of notification when a bear is clicked. He would also need a very fast ‘over-the-cloud’ service to recognize bears in these photographs so that he and his team can take appropriate actions. 
+> A senior climate scientist in the Arctic is worried about the extinction of polar bears in the region. He has placed hundreds of motion-activated cameras at marked location throughout the region. He now wants to devise an automated system that can process data from these cameras in real time and can display some sort of notification when a bear is clicked. He would also need a very fast ‘over-the-cloud’ service to recognize bears in these photographs so that he and his team can take appropriate actions. 
                               The project idea deals with building a big-data application using Microsoft Azure and Microsoft Cognitive Services. Data in the form of photos will be streamed and processed real-time and will be analyzed via an image recognition service. The results will done by presented in a customized dashboard using data from a fully deployed database. Therefore, the application follows the entire flow of collecting, classifying and visualizing big data in the real world. 
 ```                              
 
