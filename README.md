@@ -67,25 +67,40 @@
    * Create a resource group ‘266Project’ in South Central US: <br />
    
  		   az group create --name 266project --location southcentralus
+		   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-30-28.png)
 
    * Create a standard storage account within this resource group ‘266Projectstorage’ in South Central US: <br />
  		   
 		   az storage account create --name 266projectstorage --resource-group 266project --location        
 		   southcentralus --kind Storage --sku Standard_LRS
+		   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-34-16.png)
+   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-34-25.png)
+
 
 
    * Create a container ‘photos’ within this storage account to transfer pics coming in from the cameras: <br />
 		   
 		   az storage container create --name photos266 --account-name cmpe266storage
+		   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-41-15.png)
+		   
 
    * Create an IOT hub ‘266hub’ which will connect to the cameras placed in the Arctic in the free tier F1: <br />
 		  
 		   az iot hub create --name 266hub --resource-group 266project --location southcentralus --sku F1
-
-
+		   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-44-16.png)
+		   
+ 
     * Get the connection string for the IOT hub using the following command: <br />
  		
 		   az iot hub show-connection-string --name 266hub
+   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-44-50.png)
+		   
 
     * Initialise a NodeJS app within the project directory: <br />
 		
@@ -95,6 +110,8 @@
     
 		   npm install azure-iothub --save
  		   npm install azure-iot-device azure-iot-device-mqtt --save
+		   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-47-37.png)
 
     * Create a file devices.json in the directory and add the content as shown in the Github repository. This file     
       defines the cameras deployed and their longitude and lattitude location. There is a missing key parameter 
@@ -105,14 +122,19 @@
       connection string generated earlier. Run this file: <br />
 		
 		   node deploy.js
+		   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-04-30%2023-56-20.png)
 
      * Upload a test image from the photos folder to the IOT hub by running test.js: <br />
  	   
 	           node test.js
+		   
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-22-36.png)
 
      * Verify that the blob was received through Azure UI within the photos container created earlier: <br />
 
-
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-23-54.png)
+   
      * Create a new resource in Azure UI for a New Stream Analytics Job which will receive live data from the 10 
        Cameras: <br />
 
