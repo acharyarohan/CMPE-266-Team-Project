@@ -323,7 +323,35 @@
 		
 		   SELECT * from dbp.PolarBears
 		     
-     * This data can then be analysed using Microsoft Power BI service. 
+     * This data can then be analysed using Microsoft Power BI service. The following screenshots show the various formatting        functionalities that Power BI provides : <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(109).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(110).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(111).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(112).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(113).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(114).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(115).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(116).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(117).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(118).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(119).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(120).png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20(121).png)
+     
+     
      
 * Solution for each requirement present in the problem statement? <br />
 
