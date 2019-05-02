@@ -370,12 +370,6 @@
 
       https://github.com/acharyarohan/CMPE-266-Team-Project 
 
-* Test Account Credentials:  <br />
-
-    * Microsoft Azure Portal Credentials are as follows-
-
-      > Username : rrajvanshi1947@gmail.com <br />
-        Password : Cmpe@266
 
 * URL to Github repo : <br />
 
