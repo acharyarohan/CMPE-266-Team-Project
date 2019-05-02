@@ -137,97 +137,128 @@
    
      * Create a new resource in Azure UI for a New Stream Analytics Job which will receive live data from the 10 
        Cameras: <br />
+       
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-25-13.png)
 
      * Check if the deployment of the job succeeded: <br />
+     
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-25-31.png)
 
      * To set the IoT hub as its input where the cameras send data, go to its input tab and add the IoT hub created earlier:          <br />
-
-
-     * Create a file run.js which will transmit events and images to the IoT hub and this is forwarded to the Stream 
-       Analytics Job: <br />
+     
+   ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-26-06.png)
+     
+    * Create a file run.js which will transmit events and images to the IoT hub and this is forwarded to the Stream 
+      Analytics Job: <br />
 		
                    node run.js
 
 
      * Go to the query editor within the Stream Analytics Job and enter the query to see if data is being received from the          IoT hub: <br />
-
-
-     * To check if an image is transferred from a given camera within 10 seconds which is indicative of a polar bear or any          other animal citing, give the following command. It will reveal the details of the device and the time when the camera        clicked more than once within 10 seconds. Save this query: <br />
-
-
-     * Create a Function App resource which will be triggered every time the above query is executed and there is 
-       a potential polar bear citing. This function app will then trigger the Custom Vision Prediction service to 
-       Ascertain whether the animal spotted is indeed a Polar bear as it could be an arctic fox or a walrus as well: <br />
-
-     * Within the Function App, create a Webhook + API which will run whenever it receives an HTTP request from  
-       from the Stream Analytics Job: <br />
-
-     * Add Function App as the output to the Stream Analytics job: <br />
-
-     * Change the saved query to save the data into the FunctionOutput: <br />
-
-     * Check if the deployment of the job succeeded: <br />
-
-     * Check if the deployment of the job succeeded: <br />
-
-     * Check if the deployment of the job succeeded: <br />
      
-     * To set the IoT hub as its input where the cameras send data, go to its input tab and add the IoT hub created earlier:          <br />
-
-
-     * Create a file run.js which will transmit events and images to the IoT hub and this is forwarded to the Stream 
-       Analytics Job: <br />
-		
-		    node run.js
-
-
-     * Go to the query editor within the Stream Analytics Job and enter the query to see if data is being received from the          IoT hub: <br />
+    ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-29-32.png)
 
 
      * To check if an image is transferred from a given camera within 10 seconds which is indicative of a polar bear or any          other animal citing, give the following command. It will reveal the details of the device and the time when the camera        clicked more than once within 10 seconds. Save this query: <br />
-
-
-
-
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-30-17.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-30-35.png)
 
 
      * Create a Function App resource which will be triggered every time the above query is executed and there is 
        a potential polar bear citing. This function app will then trigger the Custom Vision Prediction service to 
        Ascertain whether the animal spotted is indeed a Polar bear as it could be an arctic fox or a walrus as well: <br />
-
+       
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-31-01.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-33-36.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-34-33.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-36-14.png)
 
      * Within the Function App, create a Webhook + API which will run whenever it receives an HTTP request from  
-       from the Stream Analytics Job: <br />
+       the Stream Analytics Job: <br />
+       
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-36-44.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-36-51.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-37-25.png)
 
      * Add Function App as the output to the Stream Analytics job: <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-38-18.png)
 
      * Change the saved query to save the data into the FunctionOutput created in the previous step and save it: <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-38-51.png)
 
      * Run run.js to start transmitting data and images to the IoT hub. The images are being transferred from the photos              folder. Start the Stream Analytics job which will accept input data from the IoT hub and invoke the saved quey and            forward the output to the Function app: <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-42-06.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-39-20.png)
 
 
      * Go to the Function app to verify if data the function is being invoked: <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-43-19.png)
 
      * Stop the Stream Analytics Job for now. <br />
 
      * Create a new resource for Custom Vision Prediction. This service will take an input from the Function app and 
        predict if the animal is spotted is indeed a Polar bear: <br />
+       
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-49-16.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-50-36.png)
 
 
      * Go to the custom vision official website and create a project within the same resource group: <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-56-55.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-57-02.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2000-57-09.png)
 
 
      * Add sample images of polar bears, walruses and arctic foxes to train the model and add their respective 
        tags: <br />
+       
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-01-09.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-01-21.png)
 
-
-    * Click on the Performance tab to do the first iteration and build the model <br />
+     * Click on the Performance tab to do the first iteration and build the model <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-01-30.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-01-47.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-01-52.png)
 
 
     * Do a Quick test and upload test images to see if the model is performing as expected: <br />
+    
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-07-01.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-07-13.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-07-38.png)
 
 
     * After confirming, publish the model to be used further:
+    
+    ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2015-37-36.png)
+    
+    ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-08-48.png)
+    
+    ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-09-02.png)
+    
+    ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-13-09.png)
 
     * Create a DB server and DB where the Function app will save the data after confirming with the Custom Vision Prediction         Service if the animal is a Polar bear or no. There will be a isPolarBear boolean attribute which will confirm if the           animal is indeed a Polar bear. The Custom Vision Service returns true if the model can predict with more than 80 percent       certainty that the animal is a polar bear: <br />
     
@@ -235,10 +266,18 @@
                    --admin-user roopam --admin-password Cmpe266pw1234
  	           az sql db create --resource-group 266project --server 266projectdb --name PolarBearDB 
 	           --service-objective S1
+		   
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-15-40.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-18-37.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-18-42.png)
 
 
 
      * Go to the DB server firewall settings and turn on access to the azure services: <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-20-22.png)
      
      * Login to the database and create a table PolarBears: <br />
 
@@ -259,19 +298,42 @@
     ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
     GO
 
-   ALTER TABLE [dbo].[PolarBears] ADD DEFAULT (newid()) FOR [Id]
-   GO
+    ALTER TABLE [dbo].[PolarBears] ADD DEFAULT (newid()) FOR [Id]
+    GO
 
-   ALTER TABLE [dbo].[PolarBears] ADD DEFAULT (getdate()) FOR [Timestamp]
-   GO
+    ALTER TABLE [dbo].[PolarBears] ADD DEFAULT (getdate()) FOR [Timestamp]
+    GO
 
-  ALTER TABLE [dbo].[PolarBears] ADD DEFAULT ((0)) FOR [IsPolarBear]
-  GO
+   ALTER TABLE [dbo].[PolarBears] ADD DEFAULT ((0)) FOR [IsPolarBear]
+   GO
   ```
 
-    * Go to the Function app and replace the instructions in the index.js file with following: <br />
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-20-54.png)
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-23-14.png)
+     
+     * Go to the Function app and replace the instructions in the index.js file with the code in function.txt file in the            project folder: <br />
+     
+     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-46-50.png)
 
+      Here predictionUrl and predictionKey come from the Custom Vision Prediction service. Other storage account details and         database details are added as shown above.
+      The function app takes an input from the Stream Analytics Job, triggers the Custom Vision Service and uploads the data         into the SQL database with a isPolarBear flag value either 1 or 0 as returned by the Prediction service.
 
+     * Go to the database created and see if it data is coming in from the Function App: <br />
+		
+		   SELECT * from dbp.PolarBears
+		     
+     * This data can then be analysed using Microsoft Power BI service. 
+     
+* Solution for each requirement present in the problem statement? <br />
+
+      1. Microsoft Azure IoT Hub: This can be used to ingest any kind of streaming data via a simulated recording media for            example - cameras. 
+      2. Microsoft Azure Storage: Any kind of streaming data can be stored here. 
+      3. Microsoft Azure Stream Analytics: This service can be used to process real-time data streams. 
+      4. Microsoft Azure Function: This service can be used to process outputs from the Stream Analytics service. 
+      5. Microsoft Custom Vision Service: This service can be used to analyze/recognize images. 
+      6. Microsoft Power BI: This service can be used to create customized dashboards for data visualization. 
+      7. Microsoft Azure SQL Database: This service can be used to store relational data. 
 
 
 * Public URL to the application: <br />
