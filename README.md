@@ -252,8 +252,6 @@
 
     * After confirming, publish the model to be used further:
     
-    ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2015-37-36.png)
-    
     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-08-48.png)
     
     ![img](https://github.com/acharyarohan/CMPE-266-Team-Project/blob/master/Screenshots/Screenshot%20from%202019-05-01%2001-09-02.png)
@@ -263,7 +261,7 @@
     * Create a DB server and DB where the Function app will save the data after confirming with the Custom Vision Prediction         Service if the animal is a Polar bear or no. There will be a isPolarBear boolean attribute which will confirm if the           animal is indeed a Polar bear. The Custom Vision Service returns true if the model can predict with more than 80 percent       certainty that the animal is a polar bear: <br />
     
                    az sql server create --name 266projectdb --resource-group 266project --location southcentralus 
-                   --admin-user roopam --admin-password Cmpe266pw1234
+                   --admin-user roopam --admin-password xxxxxx
  	           az sql db create --resource-group 266project --server 266projectdb --name PolarBearDB 
 	           --service-objective S1
 		   
